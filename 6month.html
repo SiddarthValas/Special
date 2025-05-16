@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Happy 6 Month Anniversary Rashi</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Parisienne&family=Montserrat:wght@400;700&display=swap');
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            background: #6a0d1a;
+            font-family: 'Montserrat', sans-serif;
+            color: #f8e8ea;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            flex-direction: column;
+        }
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.12);
+            padding: 60px 40px 70px 40px;
+            border-radius: 25px;
+            box-shadow: 0 15px 30px rgba(105, 15, 30, 0.6);
+            max-width: 800px;
+            width: 95%;
+            position: relative;
+            backdrop-filter: blur(16px);
+            display: none;
+        }
+        h1 {
+            font-family: 'Parisienne', cursive;
+            font-size: 3.75rem;
+            margin: 0 0 15px 0;
+            color: #ffdfe2;
+            text-shadow: 2px 2px 6px #3b0009;
+        }
+        p.message {
+            font-size: 1.25rem;
+            line-height: 1.6;
+            margin: 20px 0 0 0;
+            color: #edcfd2;
+        }
+        .heart {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            animation: heartbeat 1.5s infinite;
+            cursor: default;
+        }
+        @keyframes heartbeat {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+        .button {
+            padding: 15px 30px;
+            font-size: 1.5rem;
+            color: #fff;
+            background: linear-gradient(45deg, #ff758c, #ff7eb3);
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 6px 15px rgba(255, 126, 179, 0.6);
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        .button:hover {
+            background: linear-gradient(45deg, #ff5270, #ff6395);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(255, 99, 149, 0.85);
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="messageContainer">
+        <h1>Happy 6 Month Anniversary Rashi!</h1>
+        <p class="message">
+            Looking back on these months, I smile at the memories we’ve made. From the little moments that made us laugh to the deep talks that brought us closer, I wouldn’t trade any of it.<br><br>
+            I know things have been complicated lately, but my feelings for you are real and strong. Love means being there through ups and downs, and I’m ready to work through this with you because you matter to me.<br><br>
+            I’ve given you my heart, and I know you’ve given me yours. Let’s leave the past behind - the pain—and build something real between us. You once told me I was your exact type—the guy you always wanted—and I’m here to remind you of that. I just hope you’ll try your best to get more attached to me because I believe in us and you know that I the one for you ;)<br><br>
+            I love you, and I want us to keep growing together. I’ll always choose you. You’re my heart, my happiness, and my forever.<br><br>
+            Happy 6-month anniversary, my love, and many more to come.
+        </p>
+        <svg class="heart" viewBox="0 0 24 24" fill="#ff6b81" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" >
+            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 
+                4.42 3 7.5 3c1.74 0 3.41 0.81 4.5 2.09C13.09 3.81 14.76 3 16.5 
+                3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+        </svg>
+    </div>
+    <button class="button" id="revealButton">Click me, Rashi</button>
+    <script>
+        const button = document.getElementById('revealButton');
+        const container = document.getElementById('messageContainer');
+        button.addEventListener('click', () => {
+            container.style.display = 'block';
+            button.style.display = 'none';
+        });
+    </script>
+</body>
+</html>
+
